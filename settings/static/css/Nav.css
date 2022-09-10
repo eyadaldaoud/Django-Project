@@ -1,0 +1,103 @@
+.darkMode {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+body {
+    font-family: 'Changa', sans-serif;
+    background-color:hsla(0,0%,0%,1);
+    background-image:
+    radial-gradient(at 50% 47%, hsla(231,100%,26%,1) 0px, transparent 50%),
+    radial-gradient(at 11% 10%, hsla(231,100%,26%,1) 0px, transparent 50%);
+}
+
+.light-mode {
+
+    display: block;
+
+}
+
+.margin-left {
+
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.navbar-phones .navbar {
+    display: none;
+}
+
+.navbar-desktop .navbar {
+    display: block;
+}
+
+.navbar ul{
+
+    display: flex;
+    list-style: none;
+    background-color: transparent;
+    
+}
+
+.navbar ul li{
+    padding: 15px;
+}
+
+
+.navbar ul li a{
+
+    color: #E900FF;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Fjalla One', sans-serif;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 100ms;
+
+}
+
+
+.navbar ul li a:hover{
+    border-bottom: 3px solid #a806b6;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 100ms;
+    color: #a806b6;
+}
+
+
+img {
+    
+    width: 35px;
+    height: 35px;
+}
+
+.phones-nav-open {
+    display: none;
+}
+.phones-nav-close {
+    display: none;
+}
+
+
+@media (max-width: 599px) {
+    .navbar-desktop{
+        display: none;
+    }
+    .phones-nav-open {
+        display: block;
+        padding: 10px;
+    }
+    .phones-nav-close {
+        display: none;
+        padding: 10px;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+    
+}

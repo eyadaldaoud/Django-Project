@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <link rel="stylesheet" href={%static 'css/Nav.css'%}>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap" rel="stylesheet">
+    
+
+    <title>nav</title>
+</head>
+<body>
+
+    <p class="phones-nav-open"><img src="{% static 'images/menu.png'%}"></p>
+     <p class="phones-nav-close"><img src="{% static 'images/close.png'%}"></p>
+     
+    <nav class="navbar">
+       
+        <ul>
+            
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'market'%}">Market</a></li>
+            <li><a id="serviceClick" style='cursor: pointer;'>Services</a></li>
+            <li><a id="contactClick" style='cursor: pointer;'>Get in touch</a></li>
+
+            <li class="margin-left"><p class="dark-mode-toggle" id="dark-mode-toggle">
+                <img src={%static 'images/bothmodes.png'%} class="light-mode">
+                
+
+            </p></li>
+            
+            
+        </ul>
+        
+    </nav>
+
+<script src={%static 'js/Nav.js'%}></script>
+</body>
+</html>

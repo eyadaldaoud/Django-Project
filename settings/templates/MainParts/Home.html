@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    {%load static%}
+    <link rel="stylesheet" href={%static 'css/home.css' %}>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap" rel="stylesheet">
+    <title>home</title>
+</head>
+
+
+
+<body>
+    {%include 'MainParts/Nav.html'%}
+    <!----------------------------Main header section-------------------------->
+    <div class="main-section">
+
+    <div class="main-section-settings">
+
+    <h1>Shop and pay using your Virtual-Wallet</h1>
+    <br>
+   
+    <br>
+    </div>
+
+    </div>
+
+
+     <!----------------------------Latest Drops section-------------------------->
+
+
+    <div class="drops-header">
+        <h1>Our latest drops</h1>
+    </div>
+    <div class='align-box'>
+    <div class="overflow">
+    <div class="boxing">
+        {% for x in products %}
+        <div class="boxes-model">
+            <div class="box-content">
+            <h1>{{x.name}}</h1>
+         
+            <a><img src={{x.image.url}}/></a>
+            <br></br>
+            <div class="price-svg">
+            <div class="price-container">{{x.price}}</div>
+     
+            </div>
+        </div>
+        </div>
+        {% endfor %}
+    
+    </div>  
+    </div>
+    </div>   
+    </div>    
+
+
+
+<!----------------------------WHY US SECTION-------------------------->
+
+<div class="whyus-header">
+
+        <h1>Why shop with us?</h1>
+</div>
+
+<div class="whyus-container">
+    <div class="boxes-container">
+        <div class="boxes">
+            <img src={%static 'images/cyber-security.png'%} style="border-radius: 25px;"/>
+
+            <div class="text">
+                <h2>Security</h2>
+            
+                <p>Immune against hacking, Safe and anonymous.</p>
+            
+            </div>
+            
+
+        </div>
+
+        <div class="boxes">
+            <img src={%static 'images/fast-delivery.png'%}/>
+
+            <div class="text">
+                <h2>Speed</h2>
+                
+                <p>Instant delivery.</p>
+            
+            </div>
+            
+        </div>
+
+        <div class="boxes">
+            <img src={%static 'images/bitcoin.png'%}/>
+
+            <div class="text">
+                <h2>Hidden fees</h2>
+                
+                <p>Almost 0 network fees and No hidden fees.</p>
+            
+            </div>
+            
+            
+        </div>
+
+    </div>
+</div>
+
+
+
+<!----------------------------Contact me section-------------------------->
+<div class="whyus-header">
+    <div class="contact-settings">
+        <div class="contact-box">
+            <h1>About this website</h1>
+            <br>
+            <p>
+                I Built this website as a practise didnt think i would take it this far and it will be like this, 
+                i might comeback later and add futures and make it alive for now its a template only.
+            </p>
+            <br>
+            <h2>Contacts</h2>
+            <br>
+            <ul><li><a href="https://discord.com/users/UGoingNoWhereBoy#1736" target="_blank">@Discord</a></li>
+                <li><a href="https://github.com/UGoingNoWhereBoy" target="_blank">@Github</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    {%include 'MainParts/Footer.html'%}
+</footer>
+
+
+<script src="{%static 'js/Nav.js'%}"></script>
+</body>
+</html>
