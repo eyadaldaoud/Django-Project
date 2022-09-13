@@ -25,8 +25,8 @@
             
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'market'%}">Market</a></li>
-            <li><a id="serviceClick" style='cursor: pointer;'>Services</a></li>
-            <li><a id="contactClick" style='cursor: pointer;'>Get in touch</a></li>
+            <li><a id="serviceClick" style='cursor: pointer;' href="{% url 'home'%}">Services</a></li>
+            <li><a id="contactClick" style='cursor: pointer;' href="{% url 'home'%}">Get in touch</a></li>
 
             <li class="margin-left"><p class="dark-mode-toggle" id="dark-mode-toggle">
                 <img src={%static 'images/bothmodes.png'%} class="light-mode">
