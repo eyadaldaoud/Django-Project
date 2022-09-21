@@ -148,6 +148,17 @@ text-align: center;
     }
 }
 
+@keyframes daytheme {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes nighttheme {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
 .box-content {
     
 padding: 10px;

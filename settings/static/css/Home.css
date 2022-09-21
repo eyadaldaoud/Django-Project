@@ -39,6 +39,7 @@ body {
 /* Why us Sections */
 
 .whyus-container {
+
     animation: anmain 1s;
     display: flex;
     justify-content: center;
@@ -62,7 +63,7 @@ body {
 }
 
 
-.boxes{
+.boxes {
 
     animation: anmain 1s;
     display: flex;
@@ -228,6 +229,7 @@ body {
     -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
      animation: pulsate-fwd 2s ease-in-out infinite both;
 }
+
 
 /*   Contacts sectionss      */
 

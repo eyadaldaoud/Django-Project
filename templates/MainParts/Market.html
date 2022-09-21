@@ -11,36 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap" rel="stylesheet">
+    
     <title>Document</title>
 </head>
 <body>
 
+    {%include 'MainParts/Nav.html'%}
   
-    <p class="phones-nav-open"><img src="{% static 'images/menu.png'%}"></p>
-     <p class="phones-nav-close"><img src="{% static 'images/close.png'%}"></p>
-     
-    <nav class="navbar">
-       
-        <ul>
-            
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'market'%}">Market</a></li>
-            <li><a id="serviceClick" style='cursor: pointer;' href="{% url 'home'%}">Services</a></li>
-            <li><a id="contactClick" style='cursor: pointer;' href="{% url 'home'%}">Get in touch</a></li>
 
-            <li class="margin-left"><p class="dark-mode-toggle" id="dark-mode-toggle">
-                <img src={%static 'images/bothmodes.png'%} class="light-mode">
-                
 
-            </p></li>
-            
-            
-        </ul>
-        
-    </nav>
-
-  
-    <br></br>
 
     <ul class="jumpTo">
         <li>Invisible Friends Collection</li>
